@@ -1,0 +1,85 @@
+html,body {
+    margin: 0;
+    font-size: 100%;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    animation: colour 30s ease infinite;
+    font-family: 'Red Hat Display';
+}
+
+.hero {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero svg {
+    height: 12rem;
+    max-width: 100vw;
+}
+
+.hero .content {
+    display: flex;
+    justify-content: center;
+}
+
+.init-white {
+    fill: #fff;
+}
+
+@keyframes colour {
+    0% {
+        background-color: white;
+        color: black;
+    }
+    50% {
+        background-color: black;
+        color: white;
+    }
+    100% {
+        background-color: white;
+        color: black;
+    }
+}
+
+@keyframes fill {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: black;
+    }
+    100% {
+        fill: white;
+    }
+}
+
+@keyframes fill-invert {
+    0% {
+        fill: black;
+    }
+    50% {
+        fill: white;
+    }
+    100% {
+        fill: black;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.7rem;
+    opacity: 0.75;
+}
